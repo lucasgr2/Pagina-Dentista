@@ -134,7 +134,7 @@
     font-family: var(--font-texto);
     font-weight: 400;
     font-size: 1.7rem;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .botao__introducao{
@@ -168,22 +168,21 @@
     }
 
     .introducao__conteudo {
-        width: 90%;
-        
+        width: 90%; 
+        margin-bottom: 70px;
     }
     .introducao__conteudo__titulo {
-
-        font-size: 1.5rem;
-
+        font-size: 1.8rem;
+        margin-bottom: 10px;
     }
 
     .introducao__conteudo__subtitulo {
         max-width: 600px;
-        text-align: center;
         font-family: var(--font-texto);
         font-weight: 400;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
+
 
     .introducao__imagem {
         margin: 70px 0 0 0;
