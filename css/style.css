@@ -5,9 +5,9 @@
 :root {
     --cor-primaria: #6E07F3;
     --cor-secundaria: #ccf381;
-    --cor-terciaria: #F9F9F9;
+    --cor-terciaria: #DFC1BD;
     --cor-quarta: #3d155f;
-    --cor-texto: #141c3a;
+    --cor-texto: #5B0E2D;
     --font-destaque: 'Kablammo', cursive;
     --font-titulo: 'Krona One', sans-serif;
     --font-texto: 'Montserrat', sans-serif;
@@ -106,48 +106,71 @@
 /* SECAO1 INTRODUCAO */
 
 .introducao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: var(--cor-terciaria);
 }
 
-.introducao__conteudo {
+.container{
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    max-width: 900px;
-    margin: 100px 3%;
-    color: var(--cor-texto);
+}
+
+.introducao__conteudo {
+    width: 50%;
 }
 
 .introducao__conteudo__titulo {
-    text-align: center;
     font-family: var(--font-titulo);
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     margin-bottom: 30px;
 
 }
 
 .introducao__conteudo__subtitulo {
-    max-width: 600px;
-    text-align: center;
+    max-width: 450px;
     font-family: var(--font-texto);
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    margin-bottom: 40px;
 }
 
-.introducao__imagem {
-    margin: 70px 0;
-    max-width: 30%;
-    border-radius: 90%;
+.botao__introducao{
+    font-family: var(--font-texto);
+    background-color: var(--cor-texto);
+    padding: 20px;
+    border-radius: 7px;
+    color: white;
 }
+
+.botao__introducao:hover{
+    background-color: transparent;
+    border: 2px solid var(--cor-texto);
+    color: var(--cor-texto);
+    transition: ease-in 0.2s;
+}
+
 
 .introducao__svg {
-    max-width: 60%;
+    width: 50%;
 }
 
 @media (max-width:650px) {
+    .container{
+        padding: 0 5px;
+        flex-direction: column;
+    }
+
+    .introducao__svg {
+        width: 90%;
+    }
+
+    .introducao__conteudo {
+        width: 90%;
+        
+    }
     .introducao__conteudo__titulo {
 
         font-size: 1.5rem;
@@ -168,9 +191,7 @@
         border-radius: 90%;
     }
 
-    .introducao__svg {
-        max-width: 100%;
-    }
+    
 }
 
 /* SECAO2 sobremim */
