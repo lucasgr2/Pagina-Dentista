@@ -4,7 +4,7 @@
 
 :root {
     --cor-primaria: #6E07F3;
-    --cor-secundaria: #ccf381;
+    --cor-secundaria: #F2F1EC;
     --cor-terciaria: #DFC1BD;
     --cor-quarta: #3d155f;
     --cor-texto: #5B0E2D;
@@ -193,7 +193,9 @@
     
 }
 
-/* SECAO2 sobremim */
+
+
+/* SECAO3 sobremim */
 
 .sobremim {
     background-color: var(--cor-primaria);
@@ -241,17 +243,14 @@
 
 .habilidades {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(180deg, var(--cor-primaria) 30%, var(--cor-terciaria) 20%);
+    background-color: var(--cor-secundaria);
+    padding: 100px 0;
 }
 
 .habilidades__container {
     max-width: 1300px;
+    margin: 0 auto;
     border-radius: 12px;
-    background-color: #e0e0e0;
-    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.41);
 }
 
 .habilidades__container__titulo {
@@ -264,57 +263,25 @@
 
 .habilidades__container__caixa {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 
-.habilidades__container__caixa__backend,
-.habilidades__container__caixa__frontend {
-    padding: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-    background: #e0e0e0;
-    box-shadow: 15px -15px 25px #a8a8a8,
-        -15px 15px 25px #ffffff;
-    width: 40%;
-    margin-bottom: 90px;
-}
-
-.habilidades__container__caixa__backend h1,
-.habilidades__container__caixa__frontend h1 {
-    margin-top: 30px;
-    font-family: var(--font-titulo);
+.servico{
     text-align: center;
-    font-size: 1.3rem;
-}
-
-.habilidades__container__caixa__backend h2,
-.habilidades__container__caixa__frontend h2 {
-    padding: 0 10%;
-    margin-top: 30px;
+    width: 30%;
+    padding: 40px 10px;
+    margin-bottom: 40px;
+    color: var(--cor-texto);
     font-family: var(--font-texto);
     font-weight: 600;
-    text-align: center;
-}
+    font-size: 2rem;
+    border-radius: 30px;
+    background: #F2F1EC;
+    box-shadow:  10px 10px 20px #cecdc9,
+             -10px -10px 20px #ffffff;
 
-.habilidades__p__1,
-.habilidades__p__1 {
-    margin-top: 30px;
-    font-family: var(--font-texto);
-    text-align: center;
-}
-
-.habilidades__p__2,
-.habilidades__p__2 {
-    font-family: var(--font-texto);
-    font-weight: 400;
-    margin-top: 20px;
-    text-align: center;
-    line-height: 25px;
 }
 
 @media (max-width:700px) {
@@ -322,15 +289,19 @@
         font-size: 2rem;
     }
 
-    .habilidades__container__caixa {
-        flex-direction: column;
+    .servico{
+        width: 45%;
+        font-size: 1.4rem;
     }
+}
 
-    .habilidades__container__caixa__backend,
-    .habilidades__container__caixa__frontend {
-        padding: 40px;
+@media (max-width:460px) {
+    .habilidades__container__titulo {
+        font-size: 2rem;
+    }
+    .servico{
         width: 80%;
-
+        font-size: 1.1rem;
     }
 }
 
