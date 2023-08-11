@@ -245,6 +245,9 @@
 }
 
 @media (max-width:650px) {
+    .img__sobremim{
+        width: 100%;
+       }
     .sobremim__conteudo__titulo {
         font-size: 1.8rem;
     }
@@ -365,13 +368,12 @@
 @media(max-width:1050px) {
     .contato__container {
         flex-direction: column;
-        margin: 0 3%;
-        padding: 30px 15px;
+        margin: 0 2%;
+        padding: 30px 10px;
     }
 
-    .contato__container__subtitulo {
-        padding: 50px 0;
-        line-height: 20px;
+    .iframe{
+        width: 98%;
     }
 }
 
